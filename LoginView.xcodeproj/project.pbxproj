@@ -6,14 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E17D2EE62EE54B4700D7792B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E17D2EE52EE54B4700D7792B /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E17D2EAB2EE5239200D7792B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E17D2E8B2EE51F0E00D7792B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17D2E922EE51F0E00D7792B;
+			remoteInfo = LoginView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E17D2E932EE51F0E00D7792B /* LoginView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17D2EA72EE5239200D7792B /* LoginViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17D2EE52EE54B4700D7792B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E17D2EB62EE524CB00D7792B /* Exceptions for "LoginView" folder in "LoginViewTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UserInput.swift,
+			);
+			target = E17D2EA62EE5239200D7792B /* LoginViewTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E17D2E952EE51F0E00D7792B /* LoginView */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E17D2EB62EE524CB00D7792B /* Exceptions for "LoginView" folder in "LoginViewTests" target */,
+			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		E17D2EA82EE5239200D7792B /* LoginViewTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LoginViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +60,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E17D2EA42EE5239200D7792B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E17D2E8A2EE51F0E00D7792B = {
 			isa = PBXGroup;
 			children = (
+				E17D2EE52EE54B4700D7792B /* README.md */,
 				E17D2E952EE51F0E00D7792B /* LoginView */,
+				E17D2EA82EE5239200D7792B /* LoginViewTests */,
 				E17D2E942EE51F0E00D7792B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E17D2E932EE51F0E00D7792B /* LoginView.app */,
+				E17D2EA72EE5239200D7792B /* LoginViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +114,29 @@
 			productReference = E17D2E932EE51F0E00D7792B /* LoginView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E17D2EA62EE5239200D7792B /* LoginViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17D2EAD2EE5239200D7792B /* Build configuration list for PBXNativeTarget "LoginViewTests" */;
+			buildPhases = (
+				E17D2EA32EE5239200D7792B /* Sources */,
+				E17D2EA42EE5239200D7792B /* Frameworks */,
+				E17D2EA52EE5239200D7792B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E17D2EAC2EE5239200D7792B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E17D2EA82EE5239200D7792B /* LoginViewTests */,
+			);
+			name = LoginViewTests;
+			packageProductDependencies = (
+			);
+			productName = LoginViewTests;
+			productReference = E17D2EA72EE5239200D7792B /* LoginViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +149,10 @@
 				TargetAttributes = {
 					E17D2E922EE51F0E00D7792B = {
 						CreatedOnToolsVersion = 26.1.1;
+					};
+					E17D2EA62EE5239200D7792B = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = E17D2E922EE51F0E00D7792B;
 					};
 				};
 			};
@@ -100,12 +171,21 @@
 			projectRoot = "";
 			targets = (
 				E17D2E922EE51F0E00D7792B /* LoginView */,
+				E17D2EA62EE5239200D7792B /* LoginViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E17D2E912EE51F0E00D7792B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17D2EE62EE54B4700D7792B /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17D2EA52EE5239200D7792B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +202,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E17D2EA32EE5239200D7792B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E17D2EAC2EE5239200D7792B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E17D2E922EE51F0E00D7792B /* LoginView */;
+			targetProxy = E17D2EAB2EE5239200D7792B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E17D2E9C2EE51F0E00D7792B /* Debug */ = {
@@ -306,6 +401,46 @@
 			};
 			name = Release;
 		};
+		E17D2EAE2EE5239200D7792B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apappstudio.LoginViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoginView";
+			};
+			name = Debug;
+		};
+		E17D2EAF2EE5239200D7792B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apappstudio.LoginViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoginView";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +458,15 @@
 			buildConfigurations = (
 				E17D2E9F2EE51F0E00D7792B /* Debug */,
 				E17D2EA02EE51F0E00D7792B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E17D2EAD2EE5239200D7792B /* Build configuration list for PBXNativeTarget "LoginViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17D2EAE2EE5239200D7792B /* Debug */,
+				E17D2EAF2EE5239200D7792B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
