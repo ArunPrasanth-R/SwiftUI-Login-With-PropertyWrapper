@@ -2,6 +2,10 @@
 
 A focused demo showcasing a reusable SwiftUI property wrapper for validated user input. The goal is to illustrate how a `DynamicProperty`-backed wrapper can encapsulate input state, validation logic, and bindings for clean, testable SwiftUI forms.
 
+## What is a Property Wrapper?
+
+Swift’s `@propertyWrapper`, introduced in Swift 5.1, allows developers to add custom behavior to properties by wrapping them with a separate type. This feature simplifies property management and reduces boilerplate code.
+
 ## Why a Property Wrapper?
 
 Property wrappers let you bundle:
